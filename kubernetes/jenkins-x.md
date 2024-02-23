@@ -10,7 +10,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest
 sudo dpkg -i minikube_latest_amd64.deb
 ```
 
-```javascript
+```bash
 curl -L https://github.com/jenkins-x/jx/releases/download/v3.10.134/jx-linux-amd64.tar.gz | tar xzv
 chmod +x jx 
 sudo mv jx /usr/local/bin
