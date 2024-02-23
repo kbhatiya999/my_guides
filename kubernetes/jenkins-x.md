@@ -24,3 +24,8 @@ minikube delete
 minikube start --cpus 4 --memory 6048 --disk-size=100g --addons=ingress --kubernetes-version=1.24
 
 ```
+
+# Ngrok tunnel
+[set-up auth token](https://dashboard.ngrok.com/get-started/your-authtoken)
+
+[start tunnel](https://dashboard.ngrok.com/cloud-edge/domains)
