@@ -3,6 +3,7 @@
 gradio:
 ```
 pip install gradio
+conda activate gradio_repo_312 && conda install pytorch::pytorch torchvision torchaudio -c pytorch -y
 ```
 
 Pytorch and Transformers:
