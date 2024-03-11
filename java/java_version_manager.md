@@ -7,3 +7,9 @@
 brew tap sdkman/tap
 brew install sdkman-cli
 ```
+
+## Usage
+```
+sdk list java
+sdk install <identifier>
+```
