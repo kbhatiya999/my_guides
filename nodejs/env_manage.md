@@ -6,3 +6,4 @@
   ```
   brew install pnpm
   ```
+* **Extension:** [https://marketplace.visualstudio.com/items?itemName=Jacano.vscode-pnpm](https://marketplace.visualstudio.com/items?itemName=Jacano.vscode-pnpm)
