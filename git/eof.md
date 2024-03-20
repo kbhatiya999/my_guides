@@ -1,4 +1,4 @@
-# EOF
+# End Of Files
 
 ## Change file endings
 
