@@ -9,3 +9,21 @@ Libraries like Python's requests or curl often handle this automatically when yo
 
 ```
 **Reference:** [https://fastapi.tiangolo.com/advanced/custom-response/#streamingresponse](https://fastapi.tiangolo.com/advanced/custom-response/#streamingresponse)
+
+Example:
+```
+curl -v -N  -X 'POST' \
+  'http://0.0.0.0:8000/api/chat' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want to see datat streaming so say `HI` 10000 times"
+    }
+  ]
+}'
+
+```
+**-N:** This will not use buffer and the prts of reponse received will be printed feeling like streaming.
