@@ -16,3 +16,15 @@ Docs: [https://poethepoet.natn.io/installation.html](https://poethepoet.natn.io/
 ```
 poetry self add 'poethepoet[poetry_plugin]'
 ```
+
+# Poe tasks
+pyproject.toml
+```
+[tool.poe.tasks]
+dev = "uvicorn fastapi_gauth.main:app --reload"
+pipv = "pip -V"
+```
+run
+```
+poetry poe dev
+```
