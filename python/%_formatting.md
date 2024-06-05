@@ -7,3 +7,8 @@ print('%(language)s has %(number)03d quote types.' %
 ```
 
 ## Important points
+* **example format :**
+* %(asctime)-10s.%(msecs)03d %(levelname)-8s %(session_id)s %(prompt_id)s %(user_id)s (%(elapsed_time)6.2f) %(filename)s %(name)-5s %(message)s
+* width and precision
+  
+  
