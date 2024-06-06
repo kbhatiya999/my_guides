@@ -7,4 +7,6 @@
      * [7. Enable AsyncIO debug mode](https://github.com/Kludex/fastapi-tips#7-enable-asyncio-debug-mode)
     
 1. cookbook: [https://github.com/Kludex/fastapi-cookbook?tab=readme-ov-file](https://github.com/Kludex/fastapi-cookbook?tab=readme-ov-file)
+     * Important points
+       * taskiq - An async alternative for celery.
 
