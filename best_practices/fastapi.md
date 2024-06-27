@@ -9,4 +9,8 @@
 1. cookbook: [https://github.com/Kludex/fastapi-cookbook?tab=readme-ov-file](https://github.com/Kludex/fastapi-cookbook?tab=readme-ov-file)
      * Important points
        * taskiq - An async alternative for celery.
+      
+## Fastapi Context
+1. **starlette-context:**
+  * [https://starlette-context.readthedocs.io/en/latest/fastapi.html](https://starlette-context.readthedocs.io/en/latest/fastapi.html) 
 
