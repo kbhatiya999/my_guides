@@ -2,7 +2,7 @@
 ## Topics
 
 1. Promises
-2. Async/Await
+2. Async/Await : [https://www.learn-js.org/en/Async_and_Await](https://www.learn-js.org/en/Async_and_Await)
 3. MediaDevices.getUserMedia()
 4. MediaRecorder API
 5. Blob
