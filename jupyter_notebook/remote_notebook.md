@@ -5,5 +5,7 @@
 jupyter lab --generate-config
 echo "c.ServerApp.allow_remote_access = True" >> ~/.jupyter/jupyter_lab_config.py
 echo "c.ServerApp.open_browser = False" >> ~/.jupyter/jupyter_lab_config.py
-jupyter lab password
+echo "c.NotebookApp.password = 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'" >> ~/.jupyter/jupyter_lab_config.py
+# jupyter lab password
+
 ```
