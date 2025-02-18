@@ -37,6 +37,6 @@ echo "c.NotebookApp.password = 'sha1:b271d0a82fde:26b986d53e32bcf05d0b19f6c97f29
   ```
   brew install ngrok
   ngrok config add-authtoken 2tAv9EYcKPtzHDtDsybzSiUDqzz_4Z9nxJw9SrGsyMpayY4TT
-  ngrok http --url=selected-bear-comic.ngrok-free.app 80
+  ngrok http --url=selected-bear-comic.ngrok-free.app 8888
   ```
   
