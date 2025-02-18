@@ -19,3 +19,24 @@ echo "c.NotebookApp.password = 'sha1:b271d0a82fde:26b986d53e32bcf05d0b19f6c97f29
 : jupyter lab password
 
 ```
+
+# Ngrok Install
+- Linux [https://dashboard.ngrok.com/get-started/setup/linux](https://dashboard.ngrok.com/get-started/setup/linux)
+  ```
+  curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
+	| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
+	&& echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
+	| sudo tee /etc/apt/sources.list.d/ngrok.list \
+	&& sudo apt update \
+	&& sudo apt install ngrok
+
+  ngrok config add-authtoken 2tAv9EYcKPtzHDtDsybzSiUDqzz_4Z9nxJw9SrGsyMpayY4TT
+  ngrok http --url=selected-bear-comic.ngrok-free.app 8888
+  ```
+- macos [https://dashboard.ngrok.com/get-started/setup/macos](https://dashboard.ngrok.com/get-started/setup/macos)
+  ```
+  brew install ngrok
+  ngrok config add-authtoken 2tAv9EYcKPtzHDtDsybzSiUDqzz_4Z9nxJw9SrGsyMpayY4TT
+  ngrok http --url=selected-bear-comic.ngrok-free.app 80
+  ```
+  
