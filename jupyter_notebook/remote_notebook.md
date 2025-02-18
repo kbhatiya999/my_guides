@@ -12,6 +12,7 @@ passwd('<password>', algorithm='sha1')
 
 
 ```bash
+pip install jupyterlab
 jupyter lab --generate-config
 echo "c.ServerApp.allow_remote_access = True" >> ~/.jupyter/jupyter_lab_config.py
 echo "c.ServerApp.open_browser = False" >> ~/.jupyter/jupyter_lab_config.py
