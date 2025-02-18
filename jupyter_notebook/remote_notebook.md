@@ -2,7 +2,7 @@
 - on terminal call `python`
 ```
 from jupyter_server.auth import passwd
-passwd('<password>')
+passwd('<password>', algorithm='sha1')
 ```
 
 # Setup Jupyter lab 
@@ -15,7 +15,7 @@ passwd('<password>')
 jupyter lab --generate-config
 echo "c.ServerApp.allow_remote_access = True" >> ~/.jupyter/jupyter_lab_config.py
 echo "c.ServerApp.open_browser = False" >> ~/.jupyter/jupyter_lab_config.py
-echo "c.NotebookApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$HYqAwy/nb/SYVe+98VJm2Q$ELDzfrKwUrhl0VbJsGmBpDEepxz43J0HPsGOArqUcmg'" >> ~/.jupyter/jupyter_lab_config.py
+echo "c.NotebookApp.password = 'sha1:b271d0a82fde:26b986d53e32bcf05d0b19f6c97f29dcf0604047'" >> ~/.jupyter/jupyter_lab_config.py
 ; jupyter lab password
 
 ```
