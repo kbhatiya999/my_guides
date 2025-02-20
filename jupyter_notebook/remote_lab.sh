@@ -16,7 +16,7 @@ fi
 
 # Kill existing Jupyter processes
 echo "Killing existing Jupyter processes..."
-pkill -f jupyter
+# pkill -f jupyter
 
 # Wait for processes to terminate
 sleep 2
@@ -32,8 +32,10 @@ echo "c.NotebookApp.password = 'sha1:b271d0a82fde:26b986d53e32bcf05d0b19f6c97f29
 # Configure ngrok
 ngrok config add-authtoken 2tAv9EYcKPtzHDtDsybzSiUDqzz_4Z9nxJw9SrGsyMpayY4TT
 
-# Start Jupyter Lab in background
-jupyter lab &
-
 # Start ngrok
-ngrok http --url=selected-bear-comic.ngrok-free.app 8888
+ngrok http --url=selected-bear-comic.ngrok-free.app 8888 &
+
+# Start Jupyter Lab in background
+jupyter lab
+
+
