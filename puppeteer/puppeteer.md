@@ -2,7 +2,7 @@
 
 # building an image using puppeteer
 ```
-docker build -t <image>
+docker build -t <image> .
 ```
 
 ## Check version
