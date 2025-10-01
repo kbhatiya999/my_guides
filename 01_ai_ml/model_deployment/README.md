@@ -1,26 +1,28 @@
 ---
-# LLM Tools Comprehensive Guide - Ollama, LM Studio, Anything LLM, Transformer Lab, Mind Work AI, Open Super Whisper
-# LLM Tools, Local Language Models, AI Development Tools, Model Deployment, Local AI, LLM Applications
-# Category: AI Machine Learning > LLM Tools > Local Model Deployment
-# Complexity: Intermediate - requires basic AI/ML knowledge
-# Prerequisites: AI basics, Python basics, local development setup
-# Keywords: ollama, lm-studio, anything-llm, transformer-lab, mind-work-ai, open-super-whisper, local-llms, ai-tools
-# Last Updated: 2024-08-31
+# AI Model Deployment
+tags: [model-deployment, llm-tools, local-ai, cloud-ai, model-serving]
+category: ai-ml > model-deployment
+complexity: intermediate
+prerequisites: [ai-basics, python-basics, local-development]
+related: [development-tools, frameworks, applications]
+last_updated: 2024-12-19
 ---
 
 ## Quick Reference
-- **Technology**: LLM tools, local model deployment, AI development environments
-- **Use Case**: Comprehensive guide to tools for working with Large Language Models
+- **Technology**: AI model deployment and serving tools
+- **Use Case**: Deploy and run AI models locally or in the cloud
 - **Complexity**: Intermediate - requires basic AI/ML knowledge
 - **Prerequisites**: Understanding of AI concepts, Python programming, local development setup
 
-# LLM Tools Comprehensive Guide
+# AI Model Deployment
 
-A comprehensive guide to tools for working with Large Language Models (LLMs), including local deployment, development, and experimentation.
+Tools and platforms for deploying, serving, and managing AI models from local development to production environments.
 
-## 🚀 Local LLM Runners
+## 🏠 Local Runners
 
-### Ollama
+Tools for running AI models on your local machine.
+
+### [Ollama](local_runners/ollama/)
 - **Use Case**: Easy local LLM deployment and management
 - **Type**: Local
 - **Key Features**: 
@@ -30,7 +32,7 @@ A comprehensive guide to tools for working with Large Language Models (LLMs), in
   - Cross-platform support
 - **Best For**: Beginners, quick prototyping, local development
 
-### LM Studio
+### [LM Studio](local_runners/lm_studio/)
 - **Use Case**: Desktop application for running local models
 - **Type**: Local
 - **Key Features**:
@@ -40,19 +42,31 @@ A comprehensive guide to tools for working with Large Language Models (LLMs), in
   - Windows/macOS support
 - **Best For**: Desktop users, non-technical users
 
-### Anything LLM
-- **Use Case**: Self-hosted document Q&A with local models
+### [Open WebUI](local_runners/open_webui/)
+- **Use Case**: Web interface for local LLMs
 - **Type**: Local
 - **Key Features**:
-  - Document ingestion and processing
-  - Local model integration
-  - Privacy-focused
-  - Web interface
-- **Best For**: Document analysis, privacy-conscious users
+  - Web-based interface
+  - Multiple model support
+  - Chat interface
+  - Easy setup
+- **Best For**: Web-based local AI interactions
 
-## 🔬 Development & Experimentation
+## ☁️ Cloud Platforms
 
-### Transformer Lab
+Tools for deploying and managing models in cloud environments.
+
+### [LiteLLM](cloud_platforms/litellm/)
+- **Use Case**: Unified API for multiple LLM providers
+- **Type**: Cloud
+- **Key Features**:
+  - Multiple provider support
+  - Unified interface
+  - Cost optimization
+  - Load balancing
+- **Best For**: Production applications, multi-provider setups
+
+### [Transformer Lab](cloud_platforms/transformer_lab/)
 - **Use Case**: Experiment with transformer models
 - **Type**: Both Local/Cloud
 - **Key Features**:
@@ -62,7 +76,21 @@ A comprehensive guide to tools for working with Large Language Models (LLMs), in
   - Performance analysis
 - **Best For**: Researchers, model developers
 
-### Mind Work AI Studio
+## 🎯 Specialized Tools
+
+Specialized tools for specific use cases and applications.
+
+### [Anything LLM](specialized/anything_llm/)
+- **Use Case**: Self-hosted document Q&A with local models
+- **Type**: Local
+- **Key Features**:
+  - Document ingestion and processing
+  - Local model integration
+  - Privacy-focused
+  - Web interface
+- **Best For**: Document analysis, privacy-conscious users
+
+### [Mind Work AI Studio](specialized/mind_work_ai_studio/)
 - **Use Case**: AI development environment
 - **Type**: Both Local/Cloud
 - **Key Features**:
@@ -72,9 +100,7 @@ A comprehensive guide to tools for working with Large Language Models (LLMs), in
   - Collaboration tools
 - **Best For**: AI developers, teams
 
-## 🎤 Speech & Audio Processing
-
-### Open Super Whisper
+### [Open Super Whisper](specialized/open_super_whisper/)
 - **Use Case**: Speech recognition and transcription
 - **Type**: Local
 - **Key Features**:
@@ -119,9 +145,9 @@ A comprehensive guide to tools for working with Large Language Models (LLMs), in
 
 ## 🔗 Related Resources
 
-- **LangChain Integration**: See `../tools/langchain/` for LangChain guides
-- **Hugging Face**: See `../frameworks/huggingface/` for model hosting
-- **PyTorch**: See `../frameworks/pytorch/` for deep learning framework
+- **Development Tools**: See `../development_tools/` for AI-powered development tools
+- **Frameworks**: See `../frameworks/` for ML frameworks like PyTorch and Hugging Face
+- **Applications**: See `../applications/` for complete project examples
 
 ## 📝 Notes
 

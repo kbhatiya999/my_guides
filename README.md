@@ -25,9 +25,9 @@ This workspace is organized into logical sections for easy navigation and discov
 ### [01 AI & Machine Learning](01_ai_ml/)
 - **Foundations**: Neural networks, GANs, research papers
 - **Frameworks**: PyTorch, Hugging Face, LangChain
-- **Applications**: Guided projects, personal projects
-- **Tools**: Gradio, LangFlow, Ray, prompts
-- **LLM Tools**: Comprehensive guide to LLM tools (Ollama, LM Studio, etc.)
+- **Model Deployment**: Ollama, LM Studio, LiteLLM, specialized tools
+- **Development Tools**: Auggie CLI, Gradio, LangFlow, Ray, prompts
+- **Applications**: Guided projects, personal projects, courses
 
 ### [02 Web Development](02_web_development/)
 - **Frontend**: React, JavaScript, Puppeteer, Vercel
@@ -68,12 +68,17 @@ This workspace is organized into logical sections for easy navigation and discov
 - **Generators**: Project scaffolding and code generation
 - **Integrations**: Third-party service integration patterns
 
+### [09 Cloud Services](09_cloud_services/)
+- **Free Tier Services**: AI/ML, web development, DevOps services
+- **Pricing Comparison**: Paid tier analysis and scaling considerations
+
 ## 🚀 Quick Start
 
 ### For AI/ML Development
 1. Start with [AI & ML Foundations](01_ai_ml/foundations/)
-2. Explore [LLM Tools Overview](01_ai_ml/llm_tools/overview.md)
-3. Try [Guided Projects](01_ai_ml/applications/guided_projects/)
+2. Explore [Model Deployment Tools](01_ai_ml/model_deployment/)
+3. Try [Development Tools](01_ai_ml/development_tools/) like Auggie CLI
+4. Build with [Guided Projects](01_ai_ml/applications/)
 
 ### For Web Development
 1. Learn [JavaScript Fundamentals](02_web_development/frontend/javascript/)
@@ -90,9 +95,16 @@ This workspace is organized into logical sections for easy navigation and discov
 2. Understand [Kubernetes](03_devops_infrastructure/orchestration/kubernetes/)
 3. Automate with [Terraform](03_devops_infrastructure/iac/terraform/)
 
+### For Cloud Services
+1. Explore [Free Tier Services](09_cloud_services/free_tier/)
+2. Compare [Pricing Options](09_cloud_services/pricing_comparison.md)
+3. Choose services for your project
+
 ## 📚 Featured Resources
 
-- **[LLM Tools Comparison](01_ai_ml/llm_tools/overview.md)** - Complete guide to LLM tools
+- **[AI Model Deployment](01_ai_ml/model_deployment/)** - Complete guide to deploying AI models
+- **[Auggie CLI Setup](01_ai_ml/development_tools/coding_assistants/auggie_cli/)** - AI-powered coding assistant
+- **[Free Cloud Services](09_cloud_services/free_tier/)** - Comprehensive free tier services
 - **[FastAPI Docker Deployment](02_web_development/backend/fastapi/_docker_images.md)** - Containerized FastAPI applications
 - **[Python Poetry Guide](04_programming/intermediate/buildtools/poetry.md)** - Modern Python package management
 - **[Git Best Practices](06_system_environment/development_tools/git/)** - Version control mastery
@@ -104,7 +116,8 @@ This workspace is optimized for natural text search. Simply search for what you'
 
 - **Search for "FastAPI"** → Find web development and API guides
 - **Search for "Python Poetry"** → Find package management guides
-- **Search for "LLM tools"** → Find AI/ML tool guides
+- **Search for "model deployment"** → Find AI model deployment guides
+- **Search for "Auggie CLI"** → Find AI coding assistant guides
 - **Search for "Docker"** → Find containerization guides
 
 ### Directory Navigation
@@ -131,7 +144,8 @@ This workspace is designed with cross-references between related topics:
 ## 🆕 Recent Updates
 
 - **Restructured workspace** for better organization
-- **Added LLM Tools Overview** with comprehensive comparison
+- **Restructured AI/ML section** with better organization
+- **Added Auggie CLI guides** for AI-powered development
 - **Optimized for text search** - find content naturally
 - **Organized by complexity** and domain expertise
 
