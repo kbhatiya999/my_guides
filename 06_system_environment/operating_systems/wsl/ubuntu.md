@@ -1,5 +1,8 @@
 # WSL / UBUNTU
 
+## Parallels Desktop Compatibility
+- **[Kernel Compatibility Guide](parallels_kernel_compatibility.md)** - Prevent kernel upgrades that break Parallels Desktop 18
+
 ## Install Chrome
 ```
 # Update system packages
