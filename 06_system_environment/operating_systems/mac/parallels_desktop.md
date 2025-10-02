@@ -9,6 +9,7 @@
 - **ARM64 Desktop ISO**: Not available for 22.04 LTS (use server + desktop install method)
 - **Kernel Compatibility**: 5.15-5.18 (avoid HWE kernels 6.8+)
 - **Key Feature**: Parallels Tools for seamless integration
+- **Check Versions**: `uname -r` (kernel), `lsb_release -a` (Ubuntu), `apt-mark showhold` (held packages)
 
 ## Installation Steps
 
@@ -59,12 +60,7 @@ To make the VM less detectable as virtual machine:
 - Don't install Parallels Tools if stealth is priority
 
 #### Check VM Detection
-```bash
-# Check if VM is detected
-systemd-detect-virt
-sudo dmidecode -s system-manufacturer
-lscpu | grep Hypervisor
-```
+See "Check Current Versions" section above for detailed system information commands.
 
 #### Modify VM Settings
 - Change manufacturer/product strings in Parallels configuration
@@ -122,9 +118,57 @@ Edit `/etc/apt/apt.conf.d/20auto-upgrades`:
 APT::Periodic::Unattended-Upgrade "0";
 ```
 
-#### Check Current Kernel
+#### Check Current Versions
+
+**Kernel Version:**
 ```bash
+# Current running kernel
 uname -r
+
+# Detailed kernel information
+uname -a
+
+# All installed kernels
+dpkg --list | grep linux-image
+```
+
+**Ubuntu Version:**
+```bash
+# Ubuntu release information
+lsb_release -a
+
+# OS version (alternative)
+cat /etc/os-release
+
+# Ubuntu version (short)
+lsb_release -rs
+```
+
+**Package Versions:**
+```bash
+# Check specific kernel packages
+apt list --installed | grep linux-image
+apt list --installed | grep linux-headers
+apt list --installed | grep linux-base
+
+# Check held packages
+apt-mark showhold
+
+# Check available kernel versions
+apt list --upgradable | grep linux
+```
+
+**System Information:**
+```bash
+# Check if running in VM
+systemd-detect-virt
+
+# Hardware information
+sudo dmidecode -s system-manufacturer
+sudo dmidecode -s system-product-name
+
+# CPU information
+lscpu | grep Hypervisor
 ```
 
 ### Recovery (If Kernel Already Upgraded)
