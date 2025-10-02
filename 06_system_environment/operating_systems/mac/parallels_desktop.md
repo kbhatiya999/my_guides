@@ -90,8 +90,15 @@ sudo unattended-upgrades
 
 #### 1. Hold Kernel Packages
 ```bash
-sudo apt-mark hold linux-image-generic linux-headers-generic linux-modules linux-generic
+sudo apt-mark hold linux-image-generic linux-headers-generic linux-modules linux-generic linux-base
 ```
+
+**Package Explanations:**
+- `linux-image-generic`: Kernel image meta-package
+- `linux-headers-generic`: Kernel headers meta-package  
+- `linux-modules`: Kernel modules
+- `linux-generic`: Main kernel meta-package
+- `linux-base`: Base kernel utilities and scripts (can trigger kernel updates)
 
 #### 2. Verify Holds
 ```bash
